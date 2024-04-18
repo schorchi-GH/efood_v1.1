@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import banner from '../../assets/fundoHero.png'
 
-export const Imagem = styled.div`
+export const HeroContainer = styled.div`
   width: 100%;
   height: 360px;
   display: flex;
@@ -11,7 +11,7 @@ export const Imagem = styled.div`
   background-image: url(${banner});
 `
 
-export const LogoMarca = styled.img`
+export const Branding = styled.img`
   width: 125px;
   height: 57.5px;
   margin-top: 40px;
