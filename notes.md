@@ -11,3 +11,7 @@ A entrega deste exercício consiste em:
 5) Envie o link do projeto na Vercel através da plataforma.
 
 onde parei Crie a página de detalhes
+
+API para ser utilizada nos exercícios
+https://fake-api-tau.vercel.app/api/efood/restaurantes
+https://fake-api-tau.vercel.app/api/efood/restaurantes/ID - ID vai do 1 ao 6
