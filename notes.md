@@ -9,4 +9,4 @@ Neste exercício você deve:
 5) Criar um novo repositório para o projeto;
 6) Subir as alterações no repositório;
 7) Criar um projeto na Vercel;
-8) Enviar o link do projeto publicado através da plataforma.
+8) Enviar o link do projeto publicado através da plataforma. teste
