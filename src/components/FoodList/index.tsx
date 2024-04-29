@@ -1,7 +1,6 @@
 import FoodModel from '../../models/Food'
 import { List, Container } from './styles'
 import Food from '../../components/Food'
-import ModalFood from '../ModalFood'
 
 export type Props = {
   foods: FoodModel[]
@@ -24,7 +23,6 @@ const FoodList = ({ foods }: Props) => (
         ))}
       </List>
     </Container>
-    <ModalFood />
   </>
 )
 
