@@ -14,7 +14,7 @@ A entrega deste exercício consiste em:
 4) Faça um novo deploy
 5) Envie o link do projeto na Vercel através da plataforma.
 
-## onde parei Crie a galeria - Parte II
+## onde parei https://lms.ebaconline.com.br/lesson/34167fe6-60f9-4010-96b0-fba6e07847a1 Integre com a API - Parte I
 
 API para ser utilizada nos exercícios
 https://fake-api-tau.vercel.app/api/efood/restaurantes
