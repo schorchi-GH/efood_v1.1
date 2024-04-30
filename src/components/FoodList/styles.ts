@@ -15,10 +15,6 @@ export const List = styled.ul`
   column-gap: 32px;
   row-gap: 32px;
 `
-<<<<<<< HEAD
-=======
-// -------------------
->>>>>>> 205520026d05101d006cda9d1fa40e7a83331c3b
 
 export const Modal = styled.div`
   position: fixed;
@@ -92,8 +88,5 @@ export const CloseIcon = styled.img`
   max-height: 16px;
   width: 100%;
   margin: 8px;
-<<<<<<< HEAD
-=======
   cursor: pointer;
->>>>>>> 205520026d05101d006cda9d1fa40e7a83331c3b
 `

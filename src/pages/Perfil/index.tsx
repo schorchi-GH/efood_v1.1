@@ -2,7 +2,6 @@ import Header from '../../components/Header'
 import Apresentacao from '../../components/Apresentacao'
 import FoodList from '../../components/FoodList'
 import Footer from '../../components/Footer'
-<<<<<<< HEAD
 import FoodModel from '../../models/Food'
 import pizza from '../../assets/pizza.png'
 import capa from '../../assets/apresentacao-fundo.png'
@@ -74,25 +73,20 @@ const restaurantData = {
   type: 'Italiana',
   name: 'La Dolce Vita Trattoria'
 }
-=======
->>>>>>> 205520026d05101d006cda9d1fa40e7a83331c3b
 
-const Perfil = () => (
-  <>
-    <Header itens={0} />
-<<<<<<< HEAD
-    <Apresentacao
-      type={restaurantData.type}
-      name={restaurantData.name}
-      image={capa}
-    />
-    <FoodList foods={foods} />
-=======
-    <Apresentacao />
-    <FoodList />
->>>>>>> 205520026d05101d006cda9d1fa40e7a83331c3b
-    <Footer />
-  </>
-)
+const Perfil = () => {
+  return (
+    <>
+      <Header itens={0} />
+      <Apresentacao
+        type={restaurantData.type}
+        name={restaurantData.name}
+        image={capa}
+      />
+      <FoodList foods={foods} />
+      <Footer />
+    </>
+  )
+}
 
 export default Perfil
