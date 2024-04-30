@@ -73,6 +73,7 @@ const restaurantData = {
   type: 'Italiana',
   name: 'La Dolce Vita Trattoria'
 }
+
 const Perfil = () => (
   <>
     <Header itens={0} />
