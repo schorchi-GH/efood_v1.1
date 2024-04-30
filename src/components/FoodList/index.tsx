@@ -31,13 +31,13 @@ const foodSelected: FoodModel = {
   foodPrice: 60.9
 }
 const FoodList = ({ foods }: Props) => {
-  const [showModal, setShowModal] = useState(true)
+  const [showModal, setShowModal] = useState(false)
   return (
     <>
       <Container>
         <List>
           {foods.map((food) => (
-            <li key={food.id}>
+            <li key={food.id} onClick={() => setShowModal(true)}>
               <Food
                 key={food.id}
                 FoodPhoto={food.foodPhoto}
@@ -49,7 +49,7 @@ const FoodList = ({ foods }: Props) => {
           ))}
         </List>
       </Container>
-      <Modal className={`${showModal}? "visible" : ""`}>
+      <Modal className={showModal ? 'visible' : ''}>
         <ModalContent>
           <FoodImage
             src={foodSelected.foodPhoto}
@@ -65,9 +65,13 @@ const FoodList = ({ foods }: Props) => {
               Adicionar ao carrinho - R$ {foodSelected.foodPrice}
             </AddCartButton>
           </ModalContainer>
-          <CloseIcon src={close} alt="Icone de fechar" />
+          <CloseIcon
+            onClick={() => setShowModal(false)}
+            src={close}
+            alt="Icone de fechar"
+          />
         </ModalContent>
-        <div className="overlay"></div>
+        <div onClick={() => setShowModal(false)} className="overlay"></div>
       </Modal>
     </>
   )

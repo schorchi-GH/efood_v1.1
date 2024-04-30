@@ -4,6 +4,7 @@ import FoodList from '../../components/FoodList'
 import Footer from '../../components/Footer'
 import FoodModel from '../../models/Food'
 import pizza from '../../assets/pizza.png'
+import capa from '../../assets/apresentacao-fundo.png'
 
 const foods: FoodModel[] = [
   {
@@ -68,10 +69,18 @@ const foods: FoodModel[] = [
   }
 ]
 
+const restaurantData = {
+  type: 'Italiana',
+  name: 'La Dolce Vita Trattoria'
+}
 const Perfil = () => (
   <>
     <Header itens={0} />
-    <Apresentacao />
+    <Apresentacao
+      type={restaurantData.type}
+      name={restaurantData.name}
+      image={capa}
+    />
     <FoodList foods={foods} />
     <Footer />
   </>
