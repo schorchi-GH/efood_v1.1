@@ -12,6 +12,9 @@ export const Card = styled.div`
 
 export const Photo = styled.img`
   margin: 8px;
+  max-width: 304px;
+  max-height: 167px;
+  width: 100%;
 `
 
 export const Title = styled.h3`

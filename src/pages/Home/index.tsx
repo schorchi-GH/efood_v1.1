@@ -15,7 +15,7 @@ export type Restaurant = {
   cardapio: [
     {
       foto: string
-      preco: string
+      preco: number
       id: number
       nome: string
       descricao: string

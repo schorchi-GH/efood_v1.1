@@ -12,14 +12,14 @@ import {
   FoodDescription,
   CloseIcon
 } from './styles'
-import FoodModel from '../../models/Food'
 import close from '../../assets/close 1.png'
+import { Restaurant } from '../../pages/Home'
 
 export type Props = {
-  foods: FoodModel[]
+  restaurant: Restaurant
 }
 
-const FoodList = ({ foods }: Props) => {
+const FoodList = ({ restaurant }: Props) => {
   const [showModal, setShowModal] = useState(false)
   const [foodTitle, setfoodTitle] = useState('')
   const [foodDescription, setfoodDescription] = useState('')
@@ -32,25 +32,25 @@ const FoodList = ({ foods }: Props) => {
     <>
       <Container>
         <List>
-          {foods.map((food) => (
+          {restaurant.cardapio.map((food) => (
             <li
               key={food.id}
               onClick={() => {
                 setShowModal(true)
-                setfoodTitle(food.foodTitle)
-                setfoodDescription(food.foodDescription)
-                setfoodServe(food.foodServe)
-                setfoodPrice(food.foodPrice)
-                setfoodPhotoAlt(food.foodPhotoAlt)
-                setfoodPhoto(food.foodPhoto)
+                setfoodTitle(food.nome)
+                setfoodDescription(food.descricao)
+                setfoodServe(food.porcao)
+                setfoodPrice(food.preco)
+                setfoodPhotoAlt(food.nome)
+                setfoodPhoto(food.foto)
               }}
             >
               <Food
                 key={food.id}
-                FoodPhoto={food.foodPhoto}
-                FoodTitle={food.foodTitle}
-                FoodDescription={food.foodDescription}
-                FoodPhotoAlt={food.foodPhotoAlt}
+                FoodPhoto={food.foto}
+                FoodTitle={food.nome}
+                FoodDescription={food.descricao}
+                FoodPhotoAlt={food.nome}
               />
             </li>
           ))}

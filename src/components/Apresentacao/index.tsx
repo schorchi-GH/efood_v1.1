@@ -3,17 +3,19 @@ import {
   ApresentacaoCategoria,
   ApresentacaoPrato
 } from './styles'
+import { Restaurant } from '../../pages/Home'
 
 export type Props = {
-  type: string
-  name: string
-  image: string
+  // type: string
+  // name: string
+  // image: string
+  restaurant: Restaurant
 }
-const Apresentacao = ({ type, name, image }: Props) => (
-  <ApresentacaoContainer style={{ backgroundImage: `url(${image})` }}>
+const Apresentacao = ({ restaurant }: Props) => (
+  <ApresentacaoContainer style={{ backgroundImage: `url(${restaurant.capa})` }}>
     <div className="container">
-      <ApresentacaoCategoria>{type}</ApresentacaoCategoria>
-      <ApresentacaoPrato>{name}</ApresentacaoPrato>
+      <ApresentacaoCategoria>{restaurant.tipo}</ApresentacaoCategoria>
+      <ApresentacaoPrato>{restaurant.titulo}</ApresentacaoPrato>
     </div>
   </ApresentacaoContainer>
 )

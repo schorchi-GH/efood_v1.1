@@ -23,7 +23,7 @@ const ProductList = ({ restaurants }: Props) => {
               restaurants.tipo,
               restaurants.destacado ? destaque : ''
             ]}
-            RestaurantToLink={`/food/${restaurants.id}`}
+            RestaurantToLink={`/restaurant/${restaurants.id}`}
           />
         ))}
       </List>
